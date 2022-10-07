@@ -8,7 +8,7 @@ Description: This function takes input from large-scale ICD code data and output
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.1
-Depends:
+Imports:
 	here,
 	dplyr,
   magrittr
