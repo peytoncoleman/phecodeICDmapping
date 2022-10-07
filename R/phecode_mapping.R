@@ -27,11 +27,12 @@ phecode_mapping <- function(input, output, date = "ICD_DATE", date_format = "%Y-
 `%>%` <- magrittr::`%>%`
 
 ### read in icd-phecode maps
-icd9_phecode <- read.csv(here::here("ICD9_to_phecode_V2.csv"))
-icd10_phecode <- read.csv(here::here("ICD10_to_phecode_V2.csv"))
+
+icd9_phecode <- system.file("extdata", "ICD9_to_phecode_V2.csv", package = "phecodeICDmapping")
+icd10_phecode <- system.file("extdata", "ICD10_to_phecode_V2.csv", package = "phecodeICDmapping")
 
 ### get phenotypes from phecode data
-phecode_to_pheno <- read.csv(here::here("phecode_strings_V2.csv"))
+phecode_to_pheno <- system.file("extdata", "phecode_strings_V2.csv", package = "phecodeICDmapping")
 
 ### separate ICD9 and ICD10 codes for easier merging
 dat_icd9 <- dplyr::filter(input, input[[type]] == "ICD9CM")
