@@ -4,11 +4,7 @@ Version: 0.0.0.9000
 Authors@R:
     person("Peyton", "Coleman", , "peyton.l.coleman@vanderbilt.edu", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0001-5388-6886"))
-Description: This function takes input from large-scale ICD code data and outputs a file with the corresponding phecodes.
-The output file is in long format, where each row is a combination of ID and phecode, the first and last date that phecode was recorded for that ID, the total number
-of times the phecode was recorded for that ID, and whether that ID is considered to use this healthcare system as their "medical home" (having
-at least five visits over a period of three years). The defaults are designed for the input from the Vanderbilt BioVU system, but all input
-columns may be defined as arguments.
+Description: This function takes input from large-scale ICD code data and outputs a file with the corresponding phecodes. The output file is in long format, where each row is a combination of ID and phecode, the first and last date that phecode was recorded for that ID, the total number of times the phecode was recorded for that ID, and whether that ID is considered to use this healthcare system as their "medical home" (having at least five visits over a period of three years). The defaults are designed for the input from the Vanderbilt BioVU system, but all input columns may be defined as arguments.
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.1
