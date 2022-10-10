@@ -18,6 +18,7 @@
 #' @param code name of column with ICD codes
 #' @param ID name of ID column
 #' @import dplyr
+#' @import magrittr
 #' @export
 phecode_mapping <- function(input, output, date = "ICD_DATE", date_format = "%Y-%m-%d",
                             type = "ICD_TYPE", code = "ICD_CODE", ID = "GRID"){
