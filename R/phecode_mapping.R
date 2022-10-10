@@ -33,11 +33,11 @@ input <- read.csv(input)
 
 ### read in icd-phecode maps
 
-icd9_phecode <- system.file("extdata", "ICD9_to_phecode_V2.csv", package = "phecodeICDmapping")
-icd10_phecode <- system.file("extdata", "ICD10_to_phecode_V2.csv", package = "phecodeICDmapping")
+icd9_phecode <- read.csv(system.file("extdata", "ICD9_to_phecode_V2.csv", package = "phecodeICDmapping"))
+icd10_phecode <- read.csv(system.file("extdata", "ICD10_to_phecode_V2.csv", package = "phecodeICDmapping"))
 
 ### get phenotypes from phecode data
-phecode_to_pheno <- system.file("extdata", "phecode_strings_V2.csv", package = "phecodeICDmapping")
+phecode_to_pheno <- read.csv(system.file("extdata", "phecode_strings_V2.csv", package = "phecodeICDmapping"))
 
 ### separate ICD9 and ICD10 codes for easier merging
 dat_icd9 <- dplyr::filter(input, !!dplyr::sym(type) == "ICD9CM")
