@@ -98,5 +98,5 @@ out_file <- alldat4 %>%
   dplyr::rename("times_recorded" = "n")
 
 ### save file
-write.csv(out_file, file = output, row.names = F, qmethod = "escape", quote = T)
+write.csv(out_file, file = output, row.names = F, quote = T)
 }
